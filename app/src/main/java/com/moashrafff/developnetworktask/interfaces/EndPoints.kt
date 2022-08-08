@@ -6,5 +6,5 @@ import retrofit2.http.GET
 interface EndPoints {
 
     @GET("products")
-    suspend fun getProducts(): Root
+    suspend fun getItems(): Root
 }

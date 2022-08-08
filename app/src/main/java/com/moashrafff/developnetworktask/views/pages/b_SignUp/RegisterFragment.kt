@@ -1,4 +1,4 @@
-package com.moashrafff.developnetworktask.views.pages
+package com.moashrafff.developnetworktask.views.pages.b_SignUp
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
