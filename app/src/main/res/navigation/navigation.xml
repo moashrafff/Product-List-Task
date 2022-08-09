@@ -3,42 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/loginFragment">
+    app:startDestination="@id/landingFragment">
 
-    <fragment
-        android:id="@+id/loginFragment"
-        android:name="com.moashrafff.developnetworktask.views.pages.a_Login.LoginFragment"
-        android:label="fragment_login"
-        tools:layout="@layout/fragment_login" >
-
-        <action
-            android:id="@+id/action_loginFragment_to_registerFragment"
-            app:destination="@id/registerFragment"
-            app:popUpToInclusive="true"
-            app:popUpTo="@id/loginFragment"
-            />
-        <action
-            android:id="@+id/action_loginFragment_to_landingFragment"
-            app:destination="@id/landingFragment"
-            app:popUpToInclusive="true"
-            app:popUpTo="@id/loginFragment"
-            />
-    </fragment>
-    <fragment
-        android:id="@+id/registerFragment"
-        android:name="com.moashrafff.developnetworktask.views.pages.b_SignUp.RegisterFragment"
-        android:label="fragment_register"
-        tools:layout="@layout/fragment_register" >
-        <action
-            android:id="@+id/action_registerFragment_to_loginFragment"
-            app:destination="@id/loginFragment"
-            app:popUpToInclusive="true"
-            app:popUpTo="@id/registerFragment"
-            />
-    </fragment>
     <fragment
         android:id="@+id/landingFragment"
         android:name="com.moashrafff.developnetworktask.views.pages.c_Landing.LandingFragment"
         android:label="fragment_landing"
         tools:layout="@layout/fragment_landing" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.moashrafff.developnetworktask.views.pages.a_Login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.moashrafff.developnetworktask.views.pages.b_SignUp.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
 </navigation>
