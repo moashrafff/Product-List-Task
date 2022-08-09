@@ -1,5 +1,8 @@
 package com.moashrafff.developnetworktask.config
 
+import android.app.Application
+import androidx.room.Room
+import com.moashrafff.developnetworktask.data.source.UserDataBaseClient
 import com.moashrafff.developnetworktask.interfaces.EndPoints
 import dagger.Module
 import dagger.Provides
@@ -25,5 +28,11 @@ object AppModule {
     @Singleton
     fun provideUserApi(retrofit: Retrofit): EndPoints =
         retrofit.create(EndPoints::class.java)
+
+    @Provides
+    @Singleton
+    fun provideDatabase(app: Application) : UserDataBaseClient =
+        Room.databaseBuilder(app, UserDataBaseClient::class.java, "database")
+            .build()
 
 }
