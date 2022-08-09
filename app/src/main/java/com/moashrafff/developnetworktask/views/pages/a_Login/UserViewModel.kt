@@ -1,12 +1,16 @@
 package com.moashrafff.developnetworktask.views.pages.a_Login
 
+import android.app.Application
+import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import com.moashrafff.developnetworktask.data.model.User
 import com.moashrafff.developnetworktask.data.source.UserRepo
+import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
-class UserViewModel @Inject constructor(private val userRepo: UserRepo) : ViewModel() {
+@HiltViewModel
+class UserViewModel @Inject constructor(private val userRepo: UserRepo , application: Application) : AndroidViewModel(application) {
 
     fun register(user: User) {
         userRepo.register(user)

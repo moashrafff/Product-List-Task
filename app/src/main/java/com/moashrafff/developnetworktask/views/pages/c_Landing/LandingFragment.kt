@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.activity.viewModels
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -38,6 +39,7 @@ class LandingFragment : Fragment() {
         // Inflate the layout for this fragment
         _binding = FragmentLandingBinding.inflate(layoutInflater)
         itemsViewModel.getProducts()
+        (activity as AppCompatActivity).supportActionBar?.title = "Home"
         return binding.root
     }
 

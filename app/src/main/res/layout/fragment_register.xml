@@ -65,7 +65,7 @@
             >
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/reg_name_et"
+                android:id="@+id/reg_phone_et"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="Enter Your phone"
@@ -104,7 +104,7 @@
             >
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/login_email_et"
+                android:id="@+id/reg_email_et"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="Enter Your Email"
@@ -141,7 +141,7 @@
             >
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/login_pass_et"
+                android:id="@+id/reg_pass_et"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
 
@@ -160,7 +160,9 @@
             android:layout_height="50dp"
             android:layout_marginTop="10dp"
             android:text="Sing Up"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:id="@+id/register_btn"
+            />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -177,7 +179,7 @@
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/sign_uup"
+                android:id="@+id/login_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"

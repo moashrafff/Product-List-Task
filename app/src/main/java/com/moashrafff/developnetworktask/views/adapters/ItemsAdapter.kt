@@ -38,7 +38,7 @@ class ItemsAdapter @Inject constructor() : RecyclerView.Adapter<RecyclerView.Vie
         val firstView: View =
             LayoutInflater.from(parent.context).inflate(R.layout.product_item, parent, false)
         val secondView: View = LayoutInflater.from(parent.context)
-            .inflate(R.layout.product_item_with_big_stock, parent, false)
+            .inflate(R.layout.item_bigger, parent, false)
 
         if (viewType == STOCK_LESS_THAN_FIFTY) {
             return ItemViewHolder(firstView);
